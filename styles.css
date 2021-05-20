@@ -19,7 +19,7 @@ table {
 }
 
 
-tr > td {
+tr > td > div   {
     position: relative;
     float: left;
     background-color: white;
@@ -31,7 +31,7 @@ tr > td {
     float: left;
 }
 
-tr > td > p {
+tr > td > div > p {
     background-color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 5px;
@@ -49,23 +49,23 @@ tr > td > p {
     font-size: 10px;
 }
 
-tr > td > img {
+tr > td > div > img {
     background-color: white;
     height: 150px;
     width: 150px;
-    float: left;
+    
 }
 
-tr > td:hover div[class="bocadillo"] {
+
+td:hover div[class="bocadillo"] {
     display: block;
  }
 
 div[class="bocadillo"] {
     display: none;
     background-color: white;
-    
-
 }
+
 div[class="bocadillo"] > p {
    margin: 5px;
    background-color: red;
@@ -73,4 +73,36 @@ div[class="bocadillo"] > p {
    border: 1px solid black;
    border-radius: 5px;
     color: white;
+}
+
+div[class="abilities"] {
+    display: none;
+    height: auto;
+    width: auto;
+    float: right;
+    background-color: ;
+    margin: 30px;
+    padding: 15px;
+    border: 1.5px solid ;
+    border-radius: 5px;
+}
+
+td:hover div[class="abilities"] {
+    display: block;
+
+}
+
+div[class="abilities"] > h3{
+    background-color: ;
+}
+
+div[class="abilities"] > ul {
+    background-color: ;
+}
+
+div[class="abilities"] > ul > li{
+    padding: 5x;
+    background-color: ;
+    list-style: none;
+    font-size: 18px;
 }
