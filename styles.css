@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    background-color: cornsilk;
+}
+
+header {
+    background-color: rgb(207, 36, 64);
+    color: white;
+    height: 10px;
+    padding: 20px;
+    font-size: 30px;
+    vertical-align: center;
+}
+
+
+table {
+    margin: 100px auto;
+
+}
+
+
+tr > td {
+    float: left;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px 5px 20px 5px;
+    
+    border-radius: 25px;
+    float: left;
+}
+
+tr > td > p {
+    background-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5px;
+}
+
+.nombre {
+    font-weight: bold;
+}
+
+.nombre::first-letter{
+    text-transform: uppercase;
+}
+
+.numero {
+    font-size: 10px;
+}
+
+tr > td > img {
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    float: left;
+}
