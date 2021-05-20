@@ -17,14 +17,20 @@ fetch('https://pokeapi.co/api/v2/pokemon/')
 
         fetch(pokemons[i].url)
         .then(res =>  res.json())
-        .then(json => {
+        .then(json => { json
             
-           json
+           console.log(json)
            var list = document.getElementsByClassName(pok)[0]
-
-           list.getElementsByClassName("img")[0].src = json.sprites.front_default
+           
+           list.getElementsByClassName("img")[0].src = json.sprites.other.dream_world.front_default
            list.getElementsByClassName("numero")[0].innerHTML = "Nº. " + json.order
            list.getElementsByClassName("nombre")[0].innerHTML = json.name
+    
+                    
+           var bocadillo = list.getElementsByClassName("bocadillo")[0]
+           bocadillo.getElementsByClassName("peso")[0].innerHTML = "Weight: "+ json.weight
+           bocadillo.getElementsByClassName("altura")[0].innerHTML = "Height: "+ json.height
+           bocadillo.getElementsByClassName("experiencia")[0].innerHTML = "Ecperience: "+ json.base_experience
         })
      }
  }   
